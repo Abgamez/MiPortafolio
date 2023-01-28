@@ -441,12 +441,19 @@ a {
     width: 70%;
 }
 .skills-content .right .nodeF::before {
+    width: 40%;
+}
+.skills-content .right .express::before {
     width: 30%;
+}
+.skills-content .right .mongodb::before {
+    width: 40%;
 }
 
 .skills-content .right .bootstrap::before {
     width: 90%;
 }
+
 
 
 

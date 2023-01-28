@@ -32,11 +32,11 @@
 
 <body>
     <header>
-        
+
         <nav class="navbar">
-            
+
             <div class="max-width">
-                <div class="logo"><a href="">C<span>-V</span> Abraham<span> Gamez</span></a></div>
+                <div class="logo"><a href="">C<span>-V</span> Ab_<span>Gamez</span></a></div>
 
                 <ul class="menu">
                     <li><a href="#home">Home</a></li>
@@ -79,7 +79,7 @@
                         I'm Abraham Gamez and I'am a Junior<span> Front-End development</span></div>
                     <p>I consider myself a intuitive and orderly person, sociable and hard-working. I less than a year
                         ago I started programming...</p>
-                    <a href="#" target="_blank">Download CV</a>
+                    <a href="AbGamez.pdf" download="AbGamez.pdf" target="_blank">Download CV</a>
                 </div>
             </div>
         </div>
@@ -89,9 +89,9 @@
 
 
     <section class="hireme" id="hireme">
-        
+
         <div class="max-width">
-            
+
             <h2 class="title">Hire<span>me</span></h2>
             <div class="column left">
                 <img src="hireme.jpg" alt="">
@@ -141,13 +141,6 @@
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>React</span>
-                            <span>55%</span>
-                        </div>
-                        <div class="line react"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
                             <span>GIT</span>
                             <span>70%</span>
                         </div>
@@ -155,7 +148,7 @@
                     </div>
                 </div>
             </div>
-<div style="padding: 20px;">  </div>
+            <div style="padding: 20px;"> </div>
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My Framework:</div>
@@ -171,10 +164,18 @@
                     <div class="bars">
                         <div class="info">
                             <span>Node Js</span>
-                            <span>30%</span>
+                            <span>40%</span>
                         </div>
                         <div class="line nodeF"></div>
                     </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Express</span>
+                            <span>30%</span>
+                        </div>
+                        <div class="line express"></div>
+                    </div>
+
                     <div class="bars">
                         <div class="info">
                             <span>Bootstrap</span>
@@ -182,6 +183,22 @@
                         </div>
                         <div class="line bootstrap"></div>
                     </div>
+                </div>
+            </div>
+            <div style="padding: 20px;"> </div>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">Database:</div>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>MongoDB</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="line mongodb"></div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -197,21 +214,28 @@
                 My Proy<span>ects</span>
             </h2>
             <div class="carousel owl-carousel">
-                
+
+
                 <div class="card">
                     <div class="box">
-                        <img src="foto.png" alt="">
-                        <div class="text">Someone3</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit..</p>
+                        <a href="https://sendcuba.net" >
+                            <img src="SendCuba.png" alt="">
+                        </a>
+                        <div class="text">SendCuba</div>
+                        <p style="text-align:justify">SendCuba is a virtual store where you can find food and toilet
+                            combos, household appliances and special gifts for your family in Cuba, remittances in
+                            National Currency and Freely Convertible Currency.</p>
                     </div>
                 </div>
-                <div class="card">
+
+            
+                <!-- <div class="card">
                     <div class="box">
                         <img src="foto.png" alt="">
                         <div class="text">Someone4</div>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit..</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -224,62 +248,74 @@
 
             <div class="column right">
                 <div class="text">Message me</div>
-                <form action="#">
+                <form action="https://formsubmit.co/34ea0496e9fde74555363ebbdb57b7db" method="POST">
                     <div class="fields">
                         <div class="field name">
-                            <input type="text" placeholder="Name" required>
+                            <input type="text" placeholder="Name" name="name" required>
                         </div>
                         <div class="field email">
-                            <input type="email" placeholder="Email" required>
+                            <input type="email" placeholder="Email" name="email" required>
                         </div>
                     </div>
                     <div class="field">
-                        <input type="text" placeholder="Subject" required>
+                        <input type="text" placeholder="Subject" name="subject" required>
                     </div>
                     <div class="field textarea">
-                        <textarea cols="30" rows="10" placeholder="Describe project..." required></textarea>
+                        <textarea cols="30" rows="10" placeholder="Describe project..." name="comments"
+                            required></textarea>
                     </div>
                     <div class="button">
                         <button type="submit">Send Message</button>
 
                     </div>
+                    <input type="hidden" name="_next" value="http://localhost:5500/">
+                    <input type="hidden" name="_captcha" value="false">
+
                 </form>
             </div>
             <div class="contact-content">
                 <div class="column left">
                     <div class="row">
-                        <i class="fab fa-github-square"></i>
                         <div class="info">
                             <div class="head">
-                                <i class="bi bi-github">
-                                <a style="color:rgb(0, 0, 0)" href="https://github.com/Abgamez"
-                                    target="_blank">GitHub</a></i>
+
+                                <a style="color:rgb(0, 0, 0)" href="https://github.com/Abgamez" target="_blank">
+                                    <i class="bi bi-github"></i> GitHub
+                                </a>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="row">
-                        <i class="fab fa-whatsapp-square"></i>
                         <div class="info">
                             <div class="head">
-                                <i class="bi bi-whatsapp" ><a 
-                                    href="https://wa.me/+5355734432?text=Hello!%20I'm%20interesting...%20"
-                                    target="_blank"> Whatsapp</a></i></div>
+                                <a href="https://api.whatsapp.com/send?phone=+5355734432?text=Hello!%20I'm%20interesting...%20"
+                                    target="_blank"><i class="bi bi-whatsapp"></i> Whatsapp</a>
+                            </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="info">
+                            <div class="head">
+                                <a href="https://t.me/A_gamez" target="_blank"><i class="bi bi-telegram"></i>
+                                    Telegram</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
         </div>
     </section>
     <footer>
-        <span>Created By <a href="https://wa.me/+5355734432">Abraham Gamez</a> | <span
+        <span>Created By <a href="https://api.whatsapp.com/send?phone=+5355734432">Abraham Gamez</a> | <span
                 class="far fa-copyright"></span>2023 All rights
             reserved.</span>
     </footer>
     <!-- -------------Boton de wsp---------------------  -->
 
-    <a href="https://wa.me/+5355734432" class="btn_wsp">
+    <a href="https://api.whatsapp.com/send?phone=+5355734432" class="btn_wsp">
 
         <img src="https://trickuweb.com/whatsapp.png" alt="" height="60px" width="60px" />
     </a>
