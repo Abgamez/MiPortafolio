@@ -478,6 +478,7 @@ a {
     padding: 25px 35px;
     text-align: center;
     transition: all .3s ease;
+    
 }
 
 .proyect .carousel .card .text {
@@ -524,22 +525,30 @@ a {
     border-radius: 50%;
     border: 2px solid crimson !important;
     transition: all .3s ease;
+    
 }
 
 .owl-dots {
     text-align: center;
     margin-top: 20px;
+    
 }
 
 .owl-dot.active {
     width: 35px;
     border-radius: 14px;
+    
 }
 
 .owl-dot.active,
 .owl-dot:hover {
     background: crimson !important;
 }
+.owl-carousel{
+    position: static !important;
+}
+
+
 
 
 
@@ -650,7 +659,7 @@ a {
     width: 170px;
 }
 
-.contact .right form .button button {
+.contact .right form .button input {
     width: 100%;
     height: 100%;
     border: 2px solid crimson;
@@ -663,7 +672,7 @@ a {
     transition: all .3s ease;
 }
 
-.contact .right form .button button:hover {
+.contact .right form .button input:hover {
     background: none;
     color: crimson;
 }

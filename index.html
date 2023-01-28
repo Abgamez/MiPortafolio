@@ -206,7 +206,6 @@
 
 
 
-
     <!-- proyect section start -->
     <section class="proyect" id="proyect">
         <div class="max-width">
@@ -214,11 +213,9 @@
                 My Proy<span>ects</span>
             </h2>
             <div class="carousel owl-carousel">
-
-
                 <div class="card">
                     <div class="box">
-                        <a href="https://sendcuba.net" >
+                        <a href="https://sendcuba.net">
                             <img src="SendCuba.png" alt="">
                         </a>
                         <div class="text">SendCuba</div>
@@ -227,15 +224,6 @@
                             National Currency and Freely Convertible Currency.</p>
                     </div>
                 </div>
-
-            
-                <!-- <div class="card">
-                    <div class="box">
-                        <img src="foto.png" alt="">
-                        <div class="text">Someone4</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit..</p>
-                    </div>
-                </div> -->
             </div>
         </div>
 
@@ -248,7 +236,7 @@
 
             <div class="column right">
                 <div class="text">Message me</div>
-                <form action="https://formsubmit.co/34ea0496e9fde74555363ebbdb57b7db" method="POST">
+                <form id="form">
                     <div class="fields">
                         <div class="field name">
                             <input type="text" placeholder="Name" name="name" required>
@@ -260,16 +248,18 @@
                     <div class="field">
                         <input type="text" placeholder="Subject" name="subject" required>
                     </div>
+                    <div class="field">
+                        <input type="number" placeholder="Number" name="number" required>
+                    </div>
                     <div class="field textarea">
                         <textarea cols="30" rows="10" placeholder="Describe project..." name="comments"
                             required></textarea>
                     </div>
                     <div class="button">
-                        <button type="submit">Send Message</button>
+                        <input type="submit" id="button" value="Send Email" >
 
                     </div>
-                    <input type="hidden" name="_next" value="https://abgamez.github.io/MiPortafolio/">
-                    <input type="hidden" name="_captcha" value="false">
+                    
 
                 </form>
             </div>
@@ -319,6 +309,11 @@
 
         <img src="https://trickuweb.com/whatsapp.png" alt="" height="60px" width="60px" />
     </a>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('epVt2rx7BnhyNJEiI')
+    </script>
 
     <script src="script.js"></script>
     <script>
@@ -330,5 +325,27 @@
         })
     </script>
 </body>
+<script>
+    const btn = document.getElementById('button');
+
+    document.getElementById('form')
+        .addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            btn.value = 'Sending...';
+
+            const serviceID = 'default_service';
+            const templateID = 'template_61gqmvl';
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    btn.value = 'Send Email';
+                    alert('Sent!');
+                }, (err) => {
+                    btn.value = 'Send Email';
+                    alert(JSON.stringify(err));
+                });
+        });
+</script>
 
 </html>
